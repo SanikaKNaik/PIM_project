@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-canvas: #F7F3EC;
+    --surface-cream: #FFFDF8;
+    --brand-chocolate: #49382F;
+    --brand-medium: #80634D;
+    --brand-taupe: #B5A28D;
+    --border-beige: #E5DBCE;
+    --accent-terracotta: #B87555;
+    --text-primary: #2A201A;
+    --text-secondary: #6B5B52;
+    --text-muted: #8F7E73;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #F7F3EC;
+    color: #2A201A;
+    min-height: 100vh;
+  }
+
+  /* Monospace & Tabular numbers */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F3EC;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9CFC4;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B5A28D;
+}
+
+/* Print styling for barcode labels and reports */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .label-page {
+    page-break-after: always;
+  }
+}

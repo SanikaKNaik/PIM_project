@@ -1,0 +1,6 @@
+{
+  "name": "Stitch PIM & WooCommerce Hub",
+  "description": "Enterprise Product Information Management (PIM) system featuring central catalogue management, Code 128 barcodes, Excel bulk workflows, role-based access, and two-way WooCommerce synchronization.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
